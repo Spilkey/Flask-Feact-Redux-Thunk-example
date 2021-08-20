@@ -1,0 +1,17 @@
+div[id^=font-picker] .dropdown-button {
+    background: var(--colors-hover);
+}
+
+div[id^=font-picker] .dropdown-button:hover {
+    background: var(--colors-light-hover);
+}
+
+div[id^=font-picker] ul li button {
+    background: var(--colors-hover);
+    border-radius: 0px
+}
+
+div[id^=font-picker] ul li button:hover,
+div[id^=font-picker] ul li button:focus{
+    background: var(--colors-light-hover);
+}

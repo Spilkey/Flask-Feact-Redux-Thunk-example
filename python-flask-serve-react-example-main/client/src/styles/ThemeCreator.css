@@ -1,0 +1,120 @@
+:root {
+  font-size: 16px;
+
+  --df-margin: 10px;
+  --df-padding: 7.5px;
+  --df-border-radius: 10px;
+  --df-content-width: 1000px;
+  --df-header-height: 70px;
+  --df-top-main-height: 500px;
+
+  --colors-hover:#2c5f8a;
+  --colors-light-hover: #275377;
+  --colors-primary: #001e38;
+  --colors-grey: #010c1e;
+  --colors-focused: #ffffff;
+  --colors-unfocused: #c6cdd7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--colors-unfocused);
+}
+
+button {
+  border: none;
+  background: var(--colors-hover);
+  border-radius: var(--df-border-radius);
+  color: var(--colors-focused);
+  transition: color 500ms, box-shadow 500ms, background 500ms,
+    border-radius 500ms;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px black;
+  transition: color 500ms, box-shadow 500ms, background 500ms,
+    border-radius 500ms;
+  background: var(--colors-light-hover);
+  cursor: pointer;
+  border-radius: calc(var(--df-border-radius) * 2);
+}
+
+button.small {
+  height: 40px;
+  min-width: 100px;
+}
+
+button.medium {
+  height: 50px;
+  min-width: 150px;
+  font-size: 1.1rem;
+}
+
+button.large {
+  height: 70px;
+  min-width: 200px;
+  font-size: 1.3rem;
+}
+
+.top-nav-bar ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0;
+  padding: var(--df-padding);
+  height: var(--df-header-height);
+}
+
+.top-nav-bar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--df-magin);
+  width: 175px;
+}
+.top-nav-bar ul li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.top-nav-bar ul li a {
+  padding: calc(var(--df-padding) * 3);
+  color: var(--colors-unfocused);
+}
+
+.top-nav-bar ul li.active a {
+  color: var(--colors-focused);
+}
+
+.top-nav-bar ul li.active {
+  background: var(--colors-primary);
+  border-radius: 10px;
+}
+
+main {
+  height: calc(100vh - var(--df-header-height) - var(--df-margin) * 4);
+  padding: calc(var(--df-margin) * 4) 0px;
+  padding-bottom: 0px;
+  overflow-y: auto;
+}
+main > * {
+  height: auto;
+}
+
+a:visited {
+  color: initial;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+a:hover {
+  color: initial;
+}

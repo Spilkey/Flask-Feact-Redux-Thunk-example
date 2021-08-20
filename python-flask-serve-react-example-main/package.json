@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "start-server": "cd server && bash run-server.sh",
+        "build-run-server": "cd client && npm run-script build && cd .. && npm run-script start-server",
+        "start-client": "cd client && npm run-script start"
+    }
+}

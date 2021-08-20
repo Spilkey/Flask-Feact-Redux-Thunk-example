@@ -1,0 +1,36 @@
+.bottom-main {
+  width: var(--df-content-width);
+  
+  display: flex;
+  justify-content: space-around;
+  padding-top: calc(var(--df-padding) * 3);
+}
+
+.bottom-main-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - (var(--df-top-main-height) + var(--df-header-height)));
+}
+
+.top-main {
+  width: 100%;
+  height: var(--df-top-main-height);
+  overflow: hidden;
+}
+
+.top-main-1 {
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--colors-grey)),
+    url("../images/top-main.jpg");
+  z-index: -1;
+  background-color: #951a1a;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

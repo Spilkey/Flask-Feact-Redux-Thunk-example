@@ -1,0 +1,19 @@
+.color-box{
+    width: 100px;
+    height: 100px;
+}
+
+.color-picker input{
+    width: calc(100px - var(--df-margin) * 2);
+    padding: 0px;
+    border: none;
+    margin: var(--df-margin)
+}
+
+.color-picker{
+    margin: calc(var(--df-margin) * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
